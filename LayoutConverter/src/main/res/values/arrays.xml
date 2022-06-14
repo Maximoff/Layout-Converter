@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="variants">
+        <item>Russian to English</item>
+        <item>English to Russian</item>
+    </string-array>
+</resources>

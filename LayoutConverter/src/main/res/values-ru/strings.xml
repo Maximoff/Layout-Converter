@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Конвертер раскладки</string>
+	<string name="exit_toast">Нажмите Назад ещё раз для выхода</string>
+	<string name="reset">Сброс</string>
+</resources>

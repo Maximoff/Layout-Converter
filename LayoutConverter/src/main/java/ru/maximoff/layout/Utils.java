@@ -1,0 +1,173 @@
+package ru.maximoff.layout;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Utils {
+	private final Map<String, String> ru2en = new HashMap<>();
+	private final Map<String, String> en2ru = new HashMap<>();
+
+	public Utils() {
+		ru2en.put("\"", "@");
+		ru2en.put("Ё", "~");
+		ru2en.put("ё", "`");
+		ru2en.put("й", "q");
+		ru2en.put("ц", "w");
+		ru2en.put("у", "e");
+		ru2en.put("к", "r");
+		ru2en.put("е", "t");
+		ru2en.put("н", "y");
+		ru2en.put("г", "u");
+		ru2en.put("ш", "i");
+		ru2en.put("щ", "o");
+		ru2en.put("з", "p");
+		ru2en.put("х", "[");
+		ru2en.put("ъ", "]");
+		ru2en.put("ф", "a");
+		ru2en.put("ы", "s");
+		ru2en.put("в", "d");
+		ru2en.put("а", "f");
+		ru2en.put("п", "g");
+		ru2en.put("р", "h");
+		ru2en.put("о", "j");
+		ru2en.put("л", "k");
+		ru2en.put("д", "l");
+		ru2en.put("э", "'");
+		ru2en.put("я", "z");
+		ru2en.put("ч", "x");
+		ru2en.put("с", "c");
+		ru2en.put("м", "v");
+		ru2en.put("и", "b");
+		ru2en.put("т", "n");
+		ru2en.put("ь", "m");
+		ru2en.put("Й", "Q");
+		ru2en.put("Ц", "W");
+		ru2en.put("У", "E");
+		ru2en.put("К", "R");
+		ru2en.put("Е", "T");
+		ru2en.put("Н", "Y");
+		ru2en.put("Г", "U");
+		ru2en.put("Ш", "I");
+		ru2en.put("Щ", "O");
+		ru2en.put("З", "P");
+		ru2en.put("Х", "{");
+		ru2en.put("Ъ", "}");
+		ru2en.put("Ф", "A");
+		ru2en.put("Ы", "S");
+		ru2en.put("В", "D");
+		ru2en.put("А", "F");
+		ru2en.put("П", "G");
+		ru2en.put("Р", "H");
+		ru2en.put("О", "J");
+		ru2en.put("Л", "K");
+		ru2en.put("Д", "L");
+		ru2en.put("Э", "\"");
+		ru2en.put("Я", "Z");
+		ru2en.put("Ч", "X");
+		ru2en.put("С", "C");
+		ru2en.put("М", "V");
+		ru2en.put("И", "B");
+		ru2en.put("Т", "N");
+		ru2en.put("Ь", "M");
+		ru2en.put("Б", "<");
+		ru2en.put("Ю", ">");
+		ru2en.put("№", "#");
+		ru2en.put(";", "$");
+		ru2en.put(":", "^");
+		ru2en.put("?", "&");
+		ru2en.put(",", "?");
+		ru2en.put("Ж", ":");
+		ru2en.put("б", ",");
+		ru2en.put(".", "/");
+		ru2en.put("ю", ".");
+		ru2en.put("ж", ";");
+
+		en2ru.put("\"", "Э");
+		en2ru.put("~", "Ё");
+		en2ru.put("`", "ё");
+		en2ru.put("q", "й");
+		en2ru.put("w", "ц");
+		en2ru.put("e", "у");
+		en2ru.put("r", "к");
+		en2ru.put("t", "е");
+		en2ru.put("y", "н");
+		en2ru.put("u", "г");
+		en2ru.put("i", "ш");
+		en2ru.put("o", "щ");
+		en2ru.put("p", "з");
+		en2ru.put("[", "х");
+		en2ru.put("]", "ъ");
+		en2ru.put("a", "ф");
+		en2ru.put("s", "ы");
+		en2ru.put("d", "в");
+		en2ru.put("f", "а");
+		en2ru.put("g", "п");
+		en2ru.put("h", "р");
+		en2ru.put("j", "о");
+		en2ru.put("k", "л");
+		en2ru.put("l", "д");
+		en2ru.put(";", "ж");
+		en2ru.put("'", "э");
+		en2ru.put("z", "я");
+		en2ru.put("x", "ч");
+		en2ru.put("c", "с");
+		en2ru.put("v", "м");
+		en2ru.put("b", "и");
+		en2ru.put("n", "т");
+		en2ru.put("m", "ь");
+		en2ru.put(",", "б");
+		en2ru.put(".", "ю");
+		en2ru.put("/", ".");
+		en2ru.put("Q", "Й");
+		en2ru.put("W", "Ц");
+		en2ru.put("E", "У");
+		en2ru.put("R", "К");
+		en2ru.put("T", "Е");
+		en2ru.put("Y", "Н");
+		en2ru.put("U", "Г");
+		en2ru.put("I", "Ш");
+		en2ru.put("O", "Щ");
+		en2ru.put("P", "З");
+		en2ru.put("{", "Х");
+		en2ru.put("}", "Ъ");
+		en2ru.put("A", "Ф");
+		en2ru.put("S", "Ы");
+		en2ru.put("D", "В");
+		en2ru.put("F", "А");
+		en2ru.put("G", "П");
+		en2ru.put("H", "Р");
+		en2ru.put("J", "О");
+		en2ru.put("K", "Л");
+		en2ru.put("L", "Д");
+		en2ru.put(":", "Ж");
+		en2ru.put("Z", "Я");
+		en2ru.put("X", "Ч");
+		en2ru.put("C", "С");
+		en2ru.put("V", "М");
+		en2ru.put("B", "И");
+		en2ru.put("N", "Т");
+		en2ru.put("M", "Ь");
+		en2ru.put("<", "Б");
+		en2ru.put(">", "Ю");
+		en2ru.put("?", ",");
+		en2ru.put("@", "\"");
+		en2ru.put("#", "№");
+		en2ru.put("$", ";");
+		en2ru.put("^", ":");
+		en2ru.put("&", "?");
+	}
+
+	public String convert(String str, boolean ru) {
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < str.length(); i++) {
+			String ch = Character.toString(str.charAt(i));
+			String newCh = (ru ? ru2en.get(ch) : en2ru.get(ch));
+			if (newCh == null) {
+				sb.append(ch);
+			} else {
+				sb.append(newCh);
+			}
+		}
+		return sb.toString();
+	}
+}

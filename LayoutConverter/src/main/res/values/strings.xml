@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Layout Converter</string>
+	<string name="exit_toast">Press Back again to exit</string>
+	<string name="reset">Reset</string>
+</resources>
